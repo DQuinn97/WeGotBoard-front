@@ -30,7 +30,7 @@ body {
         height: 100%;
         max-width: 1300px;
         font-family: "Manrope", serif;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.9rem;
         letter-spacing: 1px;
         a {
@@ -44,7 +44,6 @@ body {
       }
     }
     .mainSection {
-      background-color: lightcyan;
       margin: 0 auto;
       max-width: 1300px;
       height: auto;
@@ -132,13 +131,14 @@ body {
               border: 1px solid var(--cardBorder);
               padding: 4px 2px;
               font-size: 1.4rem;
+              cursor: pointer;
             }
           }
         }
       }
       .productLayout {
         color: black;
-        background-color: lightgreen;
+        /* background-color: lightgreen; */
         width: 990px;
         height: auto;
         display: flex;
