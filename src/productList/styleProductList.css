@@ -1,0 +1,68 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  font-size: 62.5%;
+  font-family: "Manrope", serif;
+  --navTop: #f53e32;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 2rem;
+  main {
+    color: white;
+    .headerNav {
+      height: 70px;
+      background-color: var(--navTop);
+      margin-bottom: 10rem;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        height: 100%;
+        max-width: 1300px;
+        font-family: "Manrope", serif;
+        font-weight: 700;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        div {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+    .mainSection {
+      background-color: lightcyan;
+      margin: 0 auto;
+      max-width: 1300px;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      .filter {
+        background-color: lightpink;
+        width: 306px;
+        height: 969.97px;
+      }
+      .productLayout {
+        background-color: lightgreen;
+        width: 990px;
+        height: 1618px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .productSorting {
+          background-color: lightseagreen;
+          width: 966px;
+          height: 47px;
+        }
+      }
+    }
+  }
+}
