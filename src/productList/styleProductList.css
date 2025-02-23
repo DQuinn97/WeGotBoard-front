@@ -5,6 +5,11 @@
   font-size: 62.5%;
   font-family: "Manrope", serif;
   --navTop: #f53e32;
+  --buttonHover: #7e1811;
+  --cardBorder: #e9e9e9;
+  --filter: #f7f7f8;
+  --borderButtonRed: #64b496;
+  --amountItemsFiltered: #7a7a7a;
 }
 * {
   box-sizing: border-box;
@@ -46,21 +51,126 @@ body {
       display: flex;
       justify-content: space-between;
       .filter {
-        background-color: lightpink;
+        color: black;
+        font-weight: 500;
+        background-color: var(--filter);
         width: 306px;
         height: 969.97px;
+        border-radius: 5px;
+        border: 1px solid var(--cardBorder);
+        padding: 2.5rem;
+        h4 {
+          font-size: 1.6rem;
+          letter-spacing: 0.2rem;
+          margin-bottom: 2rem;
+        }
+        hr {
+          height: 1px;
+          border: none;
+          background-color: var(--cardBorder);
+        }
+        .productCategory {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            li {
+              font-size: 1.4rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              color: var(--amountItemsFiltered);
+              div {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                letter-spacing: 0.1rem;
+              }
+            }
+          }
+        }
+        .filterByPrice {
+          p {
+            font-size: 1.6rem;
+            font-weight: 800;
+          }
+          .priceSlider {
+            input {
+              padding: 1.6rem 0;
+              width: 100%;
+            }
+          }
+          button {
+            margin-top: 2rem;
+            color: white;
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid var(--borderButtonRed);
+            background: var(--navTop);
+            cursor: pointer;
+            &:hover {
+              background-color: var(--buttonHover);
+            }
+          }
+        }
       }
       .productLayout {
+        color: black;
         background-color: lightgreen;
         width: 990px;
-        height: 1618px;
+        height: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         .productSorting {
-          background-color: lightseagreen;
+          background-color: var(--filter);
           width: 966px;
           height: 47px;
+          margin-bottom: 3rem;
+          border-radius: 5px;
+          border: 1px solid var(--cardBorder);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.5rem;
+          color: var(--amountItemsFiltered);
+          :first-child {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.15rem;
+            button {
+              width: 4rem;
+              height: 4rem;
+            }
+          }
+        }
+        .productGrid {
+          background-color: lightslategray;
+          width: 966px;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          padding: 1.4rem;
+          color: black;
+          .productCard {
+            background-color: white;
+            height: 477px;
+            border-radius: 5px;
+            border: 1px solid var(--cardBorder);
+            text-align: center;
+          }
+        }
+        .gridPagination {
+          padding: 2rem;
         }
       }
     }
