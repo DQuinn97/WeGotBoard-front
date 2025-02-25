@@ -245,11 +245,48 @@ body {
             text-decoration: line-through;
             color: var(--amountItemsFiltered);
           }
-          .stock-status {
+        }
+      }
+      .purchase-options {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .add-to-cart-section {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          .quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+          .qty-input input {
+            width: 4rem;
+            text-align: center;
+            padding: 0.5rem;
             font-size: 1.4rem;
-            font-weight: 600;
-            padding: 0.4rem 1rem;
-            border-radius: 3px;
+            border: 1px solid var(--cardBorder);
+            border-radius: 5px;
+          }
+          .qty-btn-container {
+            display: flex;
+            flex-direction: column;
+          }
+          .qty-btn {
+            width: 2.4rem;
+            height: 2.4rem;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            background: #f0f0f0;
+            transition: all 0.3s ease;
+          }
+
+          .qty-btn:hover {
+            background-color: var(--amountItemsFiltered);
           }
         }
       }
