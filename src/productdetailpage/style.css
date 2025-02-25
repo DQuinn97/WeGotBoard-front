@@ -75,6 +75,52 @@ body {
         margin-bottom: 1.5rem;
         letter-spacing: 0.2rem;
       }
+      .game-list,
+      .expansion-list,
+      .accessory-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .game-item,
+      .expansion-item,
+      .accessory-item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: white;
+        border: 1px solid var(--cardBorder);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        img {
+          width: 8rem;
+          height: 8rem;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        .game-info,
+        .expansion-info,
+        .accessory-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 0.5rem;
+
+          h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
     }
   }
 }
