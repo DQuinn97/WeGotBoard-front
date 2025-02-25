@@ -76,7 +76,6 @@ body {
         letter-spacing: 0.2rem;
       }
       .game-list,
-      .expansion-list,
       .accessory-list {
         display: flex;
         flex-direction: column;
@@ -84,7 +83,6 @@ body {
       }
 
       .game-item,
-      .expansion-item,
       .accessory-item {
         display: flex;
         gap: 1rem;
@@ -107,7 +105,6 @@ body {
         }
 
         .game-info,
-        .expansion-info,
         .accessory-info {
           display: flex;
           flex-direction: column;
@@ -431,6 +428,52 @@ body {
       }
     }
   }
-}
+  @media (max-width: 1024px) {
+    main .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "content"
+        "tabs"
+        "sidebar";
+    }
 
-/* media queries hieronder */
+    main .product-content {
+      grid-template-columns: 1fr;
+    }
+
+    main .product-sidebar {
+      margin-top: 2rem;
+      /* display: none; */
+    }
+  }
+
+  @media (max-width: 768px) {
+    main .product-gallery {
+      margin-bottom: 2rem;
+    }
+    main .product-sidebar {
+      margin-top: 2rem;
+      /* display: none; */
+    }
+
+    main .thumbnail-images {
+      flex-wrap: wrap;
+    }
+
+    main .tab-buttons {
+      flex-wrap: wrap;
+    }
+
+    main .game-item,
+    main .accessory-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+  }
+}
