@@ -36,7 +36,7 @@ body {
         font-size: 1.9rem;
         letter-spacing: 0.1rem;
         padding: 0 2rem;
-        /* max-width: 130rem; */
+        max-width: 130rem;
         a {
           text-decoration: none;
           color: white;
@@ -118,6 +118,138 @@ body {
             font-size: 1.4rem;
             font-weight: 600;
             letter-spacing: 0.1rem;
+          }
+          .stars {
+            color: orange;
+            font-size: 1.2rem;
+          }
+
+          .price {
+            color: var(--navTop);
+            font-weight: 900;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    .product-content {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      .product-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .main-image {
+          border: 1px solid var(--cardBorder);
+          padding: 1rem;
+          border-radius: 5px;
+          background-color: var(--filter);
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+          }
+        }
+
+        .thumbnail-images {
+          display: flex;
+          gap: 1rem;
+
+          img {
+            width: 8rem;
+            height: 8rem;
+            object-fit: cover;
+            border: 1px solid var(--cardBorder);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+            &:hover {
+              border-color: var(--navTop);
+            }
+          }
+        }
+      }
+      .product-info {
+        .game-category {
+          color: var(--navTop);
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+        }
+
+        h1 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          line-height: 1.1;
+        }
+        p {
+          font-size: 1.4rem;
+          color: var(--amountItemsFiltered);
+        }
+
+        .rating {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 2rem;
+
+          .stars {
+            color: orange;
+            font-size: 1.8rem;
+          }
+
+          span {
+            color: var(--amountItemsFiltered);
+            font-size: 1.4rem;
+          }
+        }
+        .product-details {
+          margin: 2rem 0;
+          padding: 2rem;
+          border-radius: 5px;
+
+          .detail-row {
+            display: flex;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+
+            .label {
+              width: 10rem;
+              font-weight: 600;
+            }
+
+            .value {
+              color: var(--amountItemsFiltered);
+            }
+          }
+        }
+        .price-section {
+          margin: 2rem 0;
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+
+          .discount-price {
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--navTop);
+          }
+
+          .original-price {
+            font-size: 1.3rem;
+            text-decoration: line-through;
+            color: var(--amountItemsFiltered);
+          }
+          .stock-status {
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 0.4rem 1rem;
+            border-radius: 3px;
           }
         }
       }
