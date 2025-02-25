@@ -16,3 +16,65 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-size: 2rem;
+
+  main {
+    color: black;
+    .headernav {
+      height: 7rem;
+      background-color: var(--navTop);
+      margin-bottom: 10rem;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        height: 100%;
+        font-family: "Manrope", serif;
+        font-size: 1.9rem;
+        letter-spacing: 0.1rem;
+        padding: 0 2rem;
+        /* max-width: 130rem; */
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        div {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: white;
+        }
+      }
+    }
+    .container {
+      max-width: 130rem;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 30rem 1fr;
+      grid-template-areas:
+        "sidebar content"
+        "sidebar tabs";
+      gap: 2rem;
+    }
+    .product-sidebar {
+      grid-area: sidebar;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: var(--filter);
+      padding: 2.5rem;
+      border-radius: 5px;
+      border: 1px solid var(--cardBorder);
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+  }
+}
