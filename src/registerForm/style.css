@@ -27,15 +27,20 @@ body {
       margin: 0 auto;
       padding: 3rem;
       width: 60rem;
-      height: 64rem;
+      height: 100%;
       border-radius: 5px;
       border: 1px solid var(--cardBorder);
       color: var(--fontForms);
       font-size: 1.5rem;
-
       .logoWgb {
         margin-bottom: 4rem;
         text-align: center;
+        img {
+          object-fit: cover;
+          display: block;
+          width: 25rem;
+          margin: 0 auto;
+        }
       }
       .inputUserDetails .input:nth-child(5) {
         grid-column: 1 / -1;
