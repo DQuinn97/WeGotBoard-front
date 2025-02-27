@@ -204,6 +204,7 @@ body {
           margin-bottom: 2rem;
           line-height: 1.1;
           color: var(--black-like);
+          letter-spacing: 0.3rem;
         }
         p {
           font-size: 1.4rem;
@@ -212,6 +213,8 @@ body {
           line-height: 1.6;
           border-bottom: 1px solid var(--cardBorder);
           padding-bottom: 2rem;
+          letter-spacing: 0.1rem;
+          word-spacing: 0.1rem;
         }
 
         .rating {
