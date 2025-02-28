@@ -10,13 +10,36 @@
     <main>
       <section class="headerNav">
         <nav>
-          <a href="#" name="shopLeft" id="shopLeft">Shop</a>
+          <a href="#" name="shopLeft" id="shopLeft">Cart</a>
           <div>
             <a href="#" name="homeRight" id="homeRight">Home</a>
-            -
+            /
             <a href="#" name="shopRight" id="shopRight">Shop</a>
           </div>
         </nav>
+      </section>
+      <section class="shoppingCartCrud">
+        <form class="crud" action="#" method="POST">
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>
+                <img src="./public/Gloomhaven.jpg" alt="Gloomhaven boardgame" />
+                <p>Gloomhaven</p>
+              </td>
+            </tr>
+          </table>
+          <div class="checkOut">
+            <a href="#">Continue Shopping</a>
+            <button>Checkout</button>
+          </div>
+        </form>
       </section>
     </main>
   </body>
