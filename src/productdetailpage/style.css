@@ -171,7 +171,7 @@ body {
           display: flex;
           gap: 1.2rem;
           justify-content: center;
-          margin: 0 auto;
+          margin: 1rem auto;
 
           img {
             width: 8.5rem;
@@ -352,8 +352,8 @@ body {
           width: 4rem;
           height: 4rem;
           border: 1px solid var(--cardBorder);
-          border-radius: 50%;
-          background: var(--filter);
+          background-color: white;
+          border-radius: 0.5rem;
           cursor: pointer;
           display: flex;
           align-items: center;
