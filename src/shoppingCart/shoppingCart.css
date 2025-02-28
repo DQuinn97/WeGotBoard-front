@@ -62,12 +62,11 @@ body {
         color: black;
         table {
           .tableHead {
-            display: grid;
             background-color: var(--cardBorder);
-            grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
             text-align: left;
             th {
               padding: 2rem;
+              width: 100%;
             }
           }
           .tableData {
@@ -87,6 +86,30 @@ body {
               }
             }
           }
+        }
+      }
+      .checkOut {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+        margin-top: 3rem;
+        button {
+          color: white;
+          width: 12rem;
+          height: 4rem;
+          background-color: var(--navTop);
+          border-radius: 5px;
+          border: none;
+          transition: all 200ms;
+          cursor: pointer;
+          &:hover {
+            background-color: var(--buttonHover);
+            color: white;
+          }
+        }
+        a {
+          color: var(--amountItemsFiltered);
+          font-size: 1.5rem;
         }
       }
     }
