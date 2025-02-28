@@ -60,6 +60,34 @@ body {
         border: 1px solid var(--cardBorder);
         background-color: var(--filter);
         color: black;
+        table {
+          .tableHead {
+            display: grid;
+            background-color: var(--cardBorder);
+            grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
+            text-align: left;
+            th {
+              padding: 2rem;
+            }
+          }
+          .tableData {
+            td {
+              padding: 2rem;
+              &:first-of-type {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                img {
+                  display: block;
+                  object-fit: cover;
+                  width: 100px;
+                  border-radius: 5px;
+                  border: 1px solid var(--cardBorder);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
