@@ -37,6 +37,9 @@ body {
         a {
           text-decoration: none;
           color: white;
+          &:hover {
+            color: var(--buttonHover);
+          }
         }
         div {
           font-size: 1.4rem;
