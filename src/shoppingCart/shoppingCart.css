@@ -67,30 +67,29 @@ body {
           .tableHead {
             background-color: var(--cardBorder);
             th {
-              padding: 2rem;
+              padding: 1rem;
               border: 1px solid black;
+              &:nth-child(3) {
+                text-align: center;
+              }
             }
           }
           .tableData {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
             td {
-              display: flex;
-              align-items: center;
               padding: 1rem;
               background-color: lightblue;
-              &:first-of-type {
-                background-color: lightgoldenrodyellow;
-                img {
-                  display: block;
-                  object-fit: cover;
-                  width: 100px;
-                  border-radius: 5px;
-                  border: 1px solid var(--cardBorder);
-                }
+              text-align: center;
+              .productInfo {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
               }
-              &:last-of-type {
+              img {
+                display: block;
+                object-fit: cover;
+                width: 100px;
+                border-radius: 5px;
+                border: 1px solid var(--cardBorder);
               }
             }
           }
