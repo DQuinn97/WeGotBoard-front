@@ -30,7 +30,7 @@
             </tr>
             <tr class="tableData">
               <td>
-                <div class="productInfo">
+                <div class="productCartInfo">
                   <img
                     src="./public/Gloomhaven.jpg"
                     alt="Gloomhaven boardgame"
@@ -38,27 +38,27 @@
                   <p>Gloomhaven</p>
                 </div>
               </td>
-              <td>
+              <td class="productCartPrice">
                 <p>€56.00</p>
               </td>
-              <td>
-                <div>
-                  <input
-                    type="number"
-                    name="product-qty"
-                    min="0"
-                    max="10"
-                    value="1"
-                  />
-                </div>
+              <td class="productCartQty">
+                <button>+</button>
+                <input
+                  type="number"
+                  class="product-qty"
+                  min="0"
+                  max="10"
+                  value="1"
+                />
+                <button>-</button>
               </td>
-              <td>€56.00</td>
-              <td><a href="#">🗑️</a></td>
+              <td class="productCartTotalPrice">€56.00</td>
+              <td class="productCartDelete"><a href="#">🗑️</a></td>
             </tr>
           </table>
           <div class="checkOut">
             <a href="#">Continue Shopping</a>
-            <button>Checkout</button>
+            <button>Check Out</button>
           </div>
         </form>
       </section>

@@ -11,6 +11,7 @@
   --borderButtonRed: #64b496;
   --amountItemsFiltered: #7a7a7a;
   --tagHover: #6e6e6e;
+  --crudFont: #444444;
 }
 * {
   box-sizing: border-box;
@@ -66,31 +67,52 @@ body {
           text-align: left;
           .tableHead {
             background-color: var(--cardBorder);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--crudFont);
             th {
-              padding: 1rem;
-              border: 1px solid black;
-              &:nth-child(3) {
-                text-align: center;
+              padding: 2rem 1.9rem 2rem 2rem;
+              text-align: center;
+              &:nth-child(1) {
+                text-align: left;
+              }
+              &:nth-child(5) {
+                text-align: right;
               }
             }
           }
           .tableData {
-            td {
+            color: var(--amountItemsFiltered);
+            padding: 1rem;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 1.5rem;
+
+            img {
+              display: block;
+              object-fit: cover;
+              width: 60px;
+              border-radius: 5px;
+              border: 1px solid var(--cardBorder);
+            }
+            .productCartInfo {
               padding: 1rem;
-              background-color: lightblue;
-              text-align: center;
-              .productInfo {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-              }
-              img {
-                display: block;
-                object-fit: cover;
-                width: 100px;
-                border-radius: 5px;
-                border: 1px solid var(--cardBorder);
-              }
+              display: flex;
+              align-items: center;
+              gap: 3rem;
+              background-color: lime;
+            }
+            .productCartPrice {
+              background-color: lightcoral;
+            }
+            .productCartQty {
+              background-color: lightgoldenrodyellow;
+            }
+            .productCartTotalPrice {
+              background-color: lightsalmon;
+            }
+            .productCartDelete {
+              background-color: lightseagreen;
             }
           }
         }
