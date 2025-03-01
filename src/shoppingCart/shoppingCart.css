@@ -76,43 +76,48 @@ body {
               &:nth-child(1) {
                 text-align: left;
               }
-              &:nth-child(5) {
-                text-align: right;
-              }
             }
           }
           .tableData {
             color: var(--amountItemsFiltered);
-            padding: 1rem;
             background-color: lightblue;
             text-align: center;
             font-size: 1.5rem;
 
-            img {
-              display: block;
-              object-fit: cover;
-              width: 60px;
-              border-radius: 5px;
-              border: 1px solid var(--cardBorder);
-            }
-            .productCartInfo {
-              padding: 1rem;
-              display: flex;
-              align-items: center;
-              gap: 3rem;
+            .productCartImage {
               background-color: lime;
+              width: 0px;
+              padding-left: 1.7rem;
+              img {
+                display: block;
+                object-fit: cover;
+                width: 60px;
+                border-radius: 5px;
+                border: 1px solid var(--cardBorder);
+              }
+            }
+            .productCartName {
+              text-align: left;
+              vertical-align: middle;
+              padding-right: 5rem;
             }
             .productCartPrice {
               background-color: lightcoral;
+              vertical-align: middle;
             }
             .productCartQty {
               background-color: lightgoldenrodyellow;
+              vertical-align: middle;
+              button {
+              }
             }
             .productCartTotalPrice {
               background-color: lightsalmon;
+              vertical-align: middle;
             }
             .productCartDelete {
               background-color: lightseagreen;
+              vertical-align: middle;
             }
           }
         }
