@@ -51,7 +51,7 @@ body {
     }
     .shoppingCartCrud {
       margin: 0 auto;
-      background-color: lightgreen;
+
       width: 1320px;
       height: 672px;
       .crud {
@@ -80,12 +80,14 @@ body {
           }
           .tableData {
             color: var(--amountItemsFiltered);
-            background-color: lightblue;
+            /* background-color: lightblue; */
             text-align: center;
             font-size: 1.5rem;
-
+            td {
+              padding: 2rem;
+            }
             .productCartImage {
-              background-color: lime;
+              /* background-color: lime; */
               width: 0px;
               padding-left: 1.7rem;
               img {
@@ -102,21 +104,48 @@ body {
               padding-right: 5rem;
             }
             .productCartPrice {
-              background-color: lightcoral;
+              /* background-color: lightcoral; */
               vertical-align: middle;
             }
             .productCartQty {
-              background-color: lightgoldenrodyellow;
+              /* background-color: lightgoldenrodyellow; */
               vertical-align: middle;
+              input {
+                font-size: 1.4rem;
+                display: inline-block;
+                height: 3.8rem;
+                padding: 0 1rem;
+                margin: 0;
+                gap: 0;
+                border-radius: 0;
+                color: var(--amountItemsFiltered);
+                background-color: white;
+                border: 1px solid var(--cardBorder);
+              }
               button {
+                font-size: 1.4rem;
+                display: inline-block;
+                height: 3.8rem;
+                padding: 0 1rem;
+                margin: 0;
+                gap: 0;
+                border-radius: 0;
+                color: var(--amountItemsFiltered);
+                background-color: white;
+                border: 1px solid var(--cardBorder);
+                cursor: pointer;
+                &:hover {
+                  background-color: var(--amountItemsFiltered);
+                  color: white;
+                }
               }
             }
             .productCartTotalPrice {
-              background-color: lightsalmon;
+              /* background-color: lightsalmon; */
               vertical-align: middle;
             }
             .productCartDelete {
-              background-color: lightseagreen;
+              /* background-color: lightseagreen; */
               vertical-align: middle;
             }
           }
