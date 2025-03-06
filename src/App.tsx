@@ -1,7 +1,7 @@
-import ProductCard from "./components/ProductCard";
+// import ProductCard from "./components/ProductCard";
 import "./style.css";
 
 const App = () => {
-  return <ProductCard />;
+  // return <ProductCard />;
 };
 export default App;
