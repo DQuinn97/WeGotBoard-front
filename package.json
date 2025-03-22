@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -15,6 +15,8 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-redux": "^9.2.0",
+    "react-router": "^7.3.0",
+    "react-toastify": "^11.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0"
   },
@@ -22,6 +24,8 @@
     "@eslint/js": "^9.19.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "@types/react-router": "^5.1.20",
+    "@types/react-toastify": "^4.0.2",
     "@types/redux-logger": "^3.0.13",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.19.0",

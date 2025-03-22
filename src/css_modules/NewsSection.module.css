@@ -1,0 +1,120 @@
+.news {
+  padding: 2rem;
+}
+
+.news h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 0.48px;
+  color: var(--black-like);
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.news p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.48px;
+  color: var(--amountItemsFiltered);
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.newsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(416px, 1fr));
+  gap: 2.4rem;
+}
+
+.newsItem {
+  border-radius: 0.5rem;
+  background-color: var(--filter);
+  border: 1px solid var(--cardBorder);
+
+  .newsItemText {
+    padding: 3.4rem 2.6rem 3.1rem 2.6rem;
+
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      letter-spacing: 0.48px;
+      color: var(--amountItemsFiltered);
+      text-align: left;
+    }
+
+    h5 {
+      font-weight: 900;
+      font-size: 1.7rem;
+      letter-spacing: 0.48px;
+      color: var(--black-like);
+      padding: 2.1rem 0 2.3rem 0;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 0.48px;
+      color: var(--borderButtonGreen);
+      text-decoration: none;
+    }
+  }
+
+  .news_img_container {
+    position: relative;
+    border-radius: 0 0 5px 5px;
+
+    img {
+      position: relative;
+      z-index: 7;
+      &:nth-of-type(1) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        opacity: 0.3;
+        z-index: 1;
+      }
+      width: 100%;
+      height: 100%;
+    }
+
+    .date {
+      position: absolute;
+      right: 1.3rem;
+      bottom: 1.3rem;
+      border-radius: 0.5rem;
+      background-color: var(--black-like);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.8rem 1.5rem;
+
+      p:nth-of-type(1) {
+        width: 2.691rem;
+        height: 2.6rem;
+        font-family: "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 2.53rem;
+        letter-spacing: 0.48px;
+        text-align: center;
+        color: var(--filter);
+      }
+
+      p:nth-of-type(2) {
+        width: 2.986rem;
+        height: 2rem;
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 1.87rem;
+        letter-spacing: 0.48px;
+        text-align: center;
+        color: var(--filter);
+      }
+    }
+  }
+}

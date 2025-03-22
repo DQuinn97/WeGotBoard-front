@@ -1,0 +1,104 @@
+.product-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--filter);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--cardBorder);
+
+  & h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  & .game-list,
+  & .accessory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  & .game-item,
+  & .accessory-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid var(--cardBorder);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    & img {
+      width: 8rem;
+      height: 8rem;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    & .game-info,
+    & .accessory-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+
+      & h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+      }
+
+      & .stars {
+        color: orange;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+
+      & .price {
+        color: var(--navTop);
+        font-weight: 900;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-sidebar {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-sidebar {
+    max-width: 500px;
+
+    & .game-item,
+    & .accessory-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+
+      & img {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--filter);
+  border: 1px solid var(--cardBorder);
+  padding-top: 20px;
+  & > div:nth-of-type(1) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    /* justify-content: center; */
+    /* gap: 7rem; */
+    padding: 10rem 20rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: baseline;
+      width: 22rem;
+      &:nth-of-type(1),
+      &:nth-of-type(4) {
+        width: 44rem;
+        grid-column: auto / span 2;
+      }
+      > img {
+        height: 6rem;
+        margin-top: -1.4rem;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.34rem;
+        letter-spacing: 0.48px;
+        color: var(--black-like);
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          font-size: 1.4rem;
+          line-height: 3.05rem;
+          letter-spacing: 0.48px;
+          color: var(--amountItemsFiltered);
+          margin: 0.8rem 0;
+        }
+      }
+      &:nth-child(4) {
+        form {
+          padding-top: 1rem;
+          position: relative;
+          input {
+            padding: 1.6rem;
+            width: 41.6rem;
+            height: 4.4rem;
+            border-radius: 0.5rem;
+            border-width: 1px;
+            background: white;
+            border: 1px solid var(--cardBorder);
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+          }
+          .send_icon {
+            position: absolute;
+            width: 4.4rem;
+            aspect-ratio: 1/1;
+            font-size: 1.7rem;
+            top: 1rem;
+            right: 1rem;
+            align-content: center;
+            text-align: center;
+          }
+        }
+        .socials {
+          margin: 2.3rem 0;
+          display: flex;
+          gap: 0.4rem;
+          div {
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 5px;
+            border-width: 1px;
+            background-color: white;
+            border: 1px solid var(--cardBorder);
+            padding: 5px;
+            text-align: center;
+            align-content: center;
+            font-size: 1.6rem;
+            cursor: pointer;
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  & > div:nth-of-type(2) {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid var(--cardBorder);
+    color: black;
+    height: 5.8rem;
+    align-content: center;
+
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+    letter-spacing: 0.48px;
+
+    span {
+      color: var(--navTop);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer {
+    & > div:nth-of-type(1) {
+      padding: 2rem;
+      > div {
+        width: 100%;
+        &:nth-of-type(1),
+        &:nth-of-type(4) {
+          max-width: 100%;
+        }
+        &:nth-child(4) {
+          form {
+            width: 100%;
+            input {
+              padding: 1.6rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

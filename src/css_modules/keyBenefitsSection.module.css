@@ -1,0 +1,27 @@
+.benefitsSection {
+  display: flex;
+  gap: 0.1rem;
+  .benefitsCard {
+    width: 32.1rem;
+    height: 10.7rem;
+    background-color: var(--filter);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    .benefitIcon {
+    }
+    .description {
+      line-height: 2.4rem;
+      h3 {
+        font-size: 1.9rem;
+        font-weight: 500;
+      }
+      h4 {
+        font-size: 1.6rem;
+        color: var(--amountItemsFiltered);
+      }
+    }
+  }
+}

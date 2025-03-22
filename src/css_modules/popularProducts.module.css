@@ -1,0 +1,30 @@
+.popular_products {
+  margin-top: 8.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .popular_nav {
+    margin: 0 auto;
+    margin-bottom: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--tagHover);
+    width: 82%;
+    > h2 {
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.84rem;
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+      li {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
