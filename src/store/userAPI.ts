@@ -69,10 +69,10 @@ export const userAPI = createApi({
     }),
     removeFromWishlist: builder.mutation<
       void,
-      { productId: string; userId: string }
+      { productId: string; userId: string; token: string }
     >({
-      query: ({ productId, userId }) => ({
-        url: `/users/${userId}/wishlist/${productId}`,
+      query: ({ productId, userId, token }) => ({
+        url: `/users/${userId}/wishlist/${productId}?token=${token}`,
         method: "DELETE",
       }),
     }),

@@ -34,6 +34,7 @@ const WishlistPage: React.FC = () => {
                       removeFromWishlist({
                         productId: product._id,
                         userId: user?._id as string,
+                        token: token as string,
                       })
                     }
                   >
