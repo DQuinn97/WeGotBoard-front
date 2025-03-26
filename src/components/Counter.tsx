@@ -8,6 +8,7 @@ import {
 import styles from "../css_modules/Counter.module.css";
 import { Product } from "../types";
 import { addToCart } from "../store/cartSlice";
+// test
 
 const Counter = ({ product }: { product: Product }) => {
   const dispatch = useDispatch();
